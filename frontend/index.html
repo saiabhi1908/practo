@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practo</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- TIXAE Chatbot Widget Start -->
+    <div style="width: 500px; height: 500px;" id="VG_OVERLAY_CONTAINER">
+      <!-- Here is where TIXAE Agents renders the widget. -->
+    </div>
+
+    <script defer>
+      (function() {
+        window.VG_CONFIG = {
+          ID: "o5HKYFzjo6y9esEQ9euL", // ✅ Use your latest Agent ID here
+          region: 'na',
+          render: 'bottom-right', // or 'bottom-right' if you prefer a floating bubble
+          stylesheets: [
+            "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+          ],
+          // Optional:
+          // modalMode: true,
+          // autostart: true,
+        };
+
+        var VG_SCRIPT = document.createElement("script");
+        VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+        VG_SCRIPT.defer = true;
+        document.body.appendChild(VG_SCRIPT);
+      })();
+    </script>
+    <!-- TIXAE Chatbot Widget End -->
+
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </body>
+</html>

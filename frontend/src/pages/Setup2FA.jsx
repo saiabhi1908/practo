@@ -11,7 +11,7 @@ const Setup2FA = () => {
   const navigate = useNavigate();
 
   // Hardcoded backend URL
-  const backendUrl = 'http://localhost:4000';
+  const backendUrl = 'https://practo-2wck.onrender.com';
 
   useEffect(() => {
     const generateQR = async () => {

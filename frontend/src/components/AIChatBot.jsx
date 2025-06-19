@@ -92,7 +92,7 @@ const AIChatBot = () => {
           const { latitude, longitude } = position.coords;
 
           axios
-            .get(`http://localhost:4000/api/places/nearby?lat=${latitude}&lng=${longitude}`)
+            .get(`https://practo-2wck.onrender.com/api/places/nearby?lat=${latitude}&lng=${longitude}`)
             .then((response) => {
               const places = response.data.results;
               const reply = places.length

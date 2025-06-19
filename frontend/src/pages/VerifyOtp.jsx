@@ -3,7 +3,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-const backendUrl = 'http://localhost:4000';
+const backendUrl = 'https://practo-2wck.onrender.com';
 
 const VerifyOtp = () => {
   const [otp, setOtp] = useState('');

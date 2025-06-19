@@ -25,7 +25,7 @@ const Verify2FA = () => {
     }
 
     try {
-      const res = await axios.post(`http://localhost:4000/api/user/verify-2fa`, {
+      const res = await axios.post(`https://practo-2wck.onrender.com/api/user/verify-2fa`, {
         email: storedEmail,
         token: code,
       });

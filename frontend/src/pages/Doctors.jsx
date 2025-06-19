@@ -3,7 +3,7 @@ import axios from 'axios';
 import { AppContext } from '../context/AppContext';
 import { useNavigate, useParams } from 'react-router-dom';
 
-const backendUrl = import.meta.env.REACT_APP_BACKEND_URL || 'http://localhost:4000';
+const backendUrl = import.meta.env.REACT_APP_BACKEND_URL || 'https://practo-2wck.onrender.com';
 
 const Doctors = () => {
   const { speciality } = useParams();
